@@ -4,6 +4,11 @@
     build:
       runs-on: ubuntu-latest
       steps:
-        - run: make ../setup
-        - run: make ../test
-        - run: make ../lint
+        # Клонируем репозиторий
+        - uses: actions/checkout@v2
+        # Устанавливаем Node.js
+        - uses: actions/setup-node@v16
+        - run: apt install make
+        - run: make setup
+        - run: make test
+        - run: make lint
