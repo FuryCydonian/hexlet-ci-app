@@ -7,8 +7,10 @@
         # Клонируем репозиторий
         - uses: actions/checkout@v2
         # Устанавливаем Node.js
-        - uses: actions/setup-node@v1
-        - run: apt install make
+        - uses: actions/setup-node@v3
+          with:
+            node-version: 16
+        - run: sudo apt install make
         - run: make setup
         - run: make test
         - run: make lint
