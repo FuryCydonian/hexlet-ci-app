@@ -5,7 +5,7 @@
       runs-on: ubuntu-latest
       steps:
         - run: cd ..
-          pwd
+        - run: pwd
 #        - run: cd .. ls -a
 #        - run: make setup
 #        - run: make test
