@@ -7,7 +7,7 @@
         # Клонируем репозиторий
         - uses: actions/checkout@v2
         # Устанавливаем Node.js
-        - uses: actions/setup-node@v16
+        - uses: actions/setup-node@v1
         - run: apt install make
         - run: make setup
         - run: make test
