@@ -4,9 +4,6 @@
     build:
       runs-on: ubuntu-latest
       steps:
-        - run: cd ..
-        - run: pwd
-#        - run: cd .. ls -a
-#        - run: make setup
-#        - run: make test
-#        - run: make lint
+        - run: make ../setup
+        - run: make ../test
+        - run: make ../lint
