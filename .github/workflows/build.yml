@@ -4,6 +4,7 @@
     build:
       runs-on: ubuntu-latest
       steps:
+        - run: pwd
         - run: make setup
         - run: make test
         - run: make lint
