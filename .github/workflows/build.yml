@@ -4,6 +4,7 @@
     build:
       runs-on: ubuntu-latest
       steps:
+        - run: cd ..
         - run: pwd
         - run: ls -a
         - run: make setup
