@@ -5,6 +5,7 @@
       runs-on: ubuntu-latest
       steps:
         - run: pwd
+        - run: ls -a
         - run: make setup
         - run: make test
         - run: make lint
