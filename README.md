@@ -1,4 +1,4 @@
-[![build](https://github.com/FuryCydonian/hexlet-ci-app/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/FuryCydonian/hexlet-ci-app/actions/workflows/build.yml)
+[![build](https://github.com/FuryCydonian/hexlet-ci-app/actions/workflows/build.yml/badge.svg)](https://github.com/FuryCydonian/hexlet-ci-app/actions/workflows/build.yml)
 
 # Example app for CI Hexlet course
 
