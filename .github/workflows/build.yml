@@ -7,10 +7,11 @@
         # Клонируем репозиторий
         - uses: actions/checkout@v2
         # Устанавливаем Node.js
-        - uses: actions/setup-node@v3
+        - uses: actions/setup-node@v4
           with:
-            node-version: 16
-        - run: sudo apt install make
+            node-version: '18.x'
+            cache: 'npm' # ускоряет повторные сборки
         - run: make setup
         - run: make test
         - run: make lint
+        - uses: hexlet-components/hello-from-hexlet-action@release
